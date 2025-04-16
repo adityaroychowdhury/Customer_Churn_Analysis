@@ -1,0 +1,112 @@
+# Objective
+
+This project investigates the factors influencing customer churn in a telecom dataset. The analysis is centered around understanding customer behaviors across contract types, payment methods, service usage, demographics, and tenure. Our goal is to identify actionable patterns that guide personalized, data-driven retention strategies.
+ Key Insights
+
+1. Contract Type Influence
+
+Customers with month-to-month contracts account for 88% of churn cases.
+
+In contrast, churn is significantly lower in one-year (11.2%) and two-year (6.3%) contracts.
+
+Long-term contracts reduce churn risk by over 70%, suggesting they act as psychological and financial anchors.
+
+2. Payment Method Risks
+
+Electronic Check users show the highest churn rate (~45%), nearly 2x higher than customers using credit cards (22.5%) or bank transfers (19.8%).
+
+Indicates a behavioral pattern where customers opting for manual/less trusted methods are more likely to discontinue.
+
+3. Tenure-Based Vulnerability
+
+Customers with tenure < 12 months churn at a rate of 47.8%, compared to just 15.3% for those with tenure > 24 months.
+
+Churn drops by 67% after the first year, highlighting the need for early onboarding strategies.
+
+4. Total Charges vs Churn
+
+Churn is highest among customers with Total Charges < $1000 (53%).
+
+Indicates that low-spending customers are price-sensitive and at greater risk.
+
+Conversely, customers spending more than $4000 have a churn rate below 10%, suggesting high-value customers require VIP-like treatment.
+
+5. Bundled Services Reduce Churn
+
+Customers subscribed to multiple services (e.g., Internet + Streaming + OnlineSecurity) churn 28% less than single-service customers.
+
+Lack of Tech Support and Online Backup correlates with churn rates above 40%, pointing to value perception gaps.
+
+6. Demographic Impact
+
+Senior Citizens show a higher churn rate (27.7%) than younger users (24.5%), indicating possible usability or pricing concerns.
+
+No significant churn variation was found by gender, confirming churn behavior is not gender-biased.
+
+7. Service Combinations Matter
+
+The combination of month-to-month contracts with electronic checks creates a churn hotspot: over 55% of such customers have churned.
+
+Customers on long-term contracts with automatic payments churn less than 5%, creating a clear target persona for retention.
+
+8. Internet Service Type & Churn
+
+Customers with DSL or Fiber Optic Internet show higher churn than those with No Internet Service, indicating possible dissatisfaction with service quality or value.
+
+
+# Visualizations
+
+Bar plots for churn by contract type, payment method, and service categories
+
+Heatmaps of correlation between churn and numeric features (tenure, total charges)
+
+Stacked bar charts showing churn breakdowns by service combinations and tenure brackets
+
+KDE & Histogram plots to understand tenure distribution across churned and retained customers
+
+Cross-tab charts for Contract + Payment Method combos
+
+
+# Business Recommendations
+
+Tenure-Based Retention Program:
+
+Deploy proactive customer engagement within the first 12 months through loyalty programs, upsell offers, and personal outreach.
+
+Contract Conversion Campaigns:
+
+Promote switching from month-to-month to annual plans by bundling discounts or giving bonus services (e.g., extra data or a free month).
+
+Transition Electronic Check Users:
+
+Encourage digital payments with trust-building campaigns, auto-pay discounts, or wallet cashback offers.
+
+
+# Multi-Service Onboarding:
+
+Incentivize users to adopt multiple services by showing value bundles that combine security, support, and streaming.
+
+Segment and Prioritize High-Risk Customers:
+
+Create automated alerts or CRM tags for users with short tenure + electronic check + month-to-month contract.
+
+Special Focus on Senior Citizens:
+
+Simplify UI/UX, offer customer education, and review senior pricing to increase satisfaction.
+
+
+# Tools & Technologies Used
+
+Python (Pandas, NumPy, Matplotlib, Seaborn)
+
+Jupyter Notebook for interactive EDA and visualization
+
+Correlation matrix, cross-tabs, and binned analysis to extract non-obvious patterns.
+
+
+Conclusion
+
+This churn analysis reveals powerful insights about behavior, preferences, and vulnerabilities across customer types. By addressing high-risk segments such as short-tenure customers using electronic checks on monthly contracts, telecom companies can build smarter, more tailored strategies. The insights underscore the importance of timely engagement, service bundling, and payment trust-building to reduce churn and boost lifetime value.
+
+Future work can include applying predictive modeling (e.g., Logistic Regression, Random Forest) and building a customer churn risk scoring system to enable preemptive action.
+
